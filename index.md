@@ -1,4 +1,4 @@
-# Hi! Welcome to my website 🥳
+# Hi! Welcome To My First Website 🥳
 
 Here is a meme I created using the [{Magick}](https://cran.r-project.org/web/packages/magick/vignettes/intro.html) package from **R**.
 
@@ -32,7 +32,7 @@ Here is a meme I created using the [{Magick}](https://cran.r-project.org/web/pac
 
 * `image_write(final_meme, "final_meme.png")`
 
-## Motivation/inspiration for this meme
+## Motivation/Inspiration For This Meme 🤔
 
 1. I found a funny meme on Google
 2. I copied the joke from the meme, but replaced the photos with others I had found on Google
