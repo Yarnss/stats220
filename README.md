@@ -1,3 +1,3 @@
-### Welcome to my website!
+## GitHub Repo for Stats220 Assignment 1
 
-[GitHub](https://yarnss.github.io/stats220/) 
+#### [My Website!](https://yarnss.github.io/stats220/) 
