@@ -8,7 +8,7 @@ Here is a meme I created using the [{Magick}](https://cran.r-project.org/web/pac
 
 * `library(magick)`
 
-* `happy_guy <- image_read("https://pbs.twimg.com/media/FMrwNcdX0AMAzOG.jpg") %>%
+* `happy_guy <- image_read("https://pbs.twimg.com/media/FMrwNcdX0AMAzOG.jpg") %>% 
   image_scale(345)`
   
 * `disappointed_guy <- image_read("https://www.meme-arsenal.com/memes/09c215c9219d02c6c80a0fb639d75317.jpg") %>%
