@@ -34,5 +34,5 @@ Here is a meme I created using the [{Magick}](https://cran.r-project.org/web/pac
 
 ## Motivation/Inspiration For This Meme 🤔
 
-1. I searched through the many memes on Google and found one I thought was funny 🤣
+1. I searched through many memes on Google and found one that I thought was funny 🤣
 2. I copied the joke from the meme, but replaced the photos with ones I had also found on Google!
