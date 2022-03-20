@@ -1,3 +1,7 @@
-## GitHub Repo for Stats220 Assignment 1
+## Welcome to my first GitHub Repo 🤩
 
-#### [My Website!](https://yarnss.github.io/stats220/) 
+**I will be using this for my Stats220 Assignment, in which I have created my own version of a meme.**
+
+Check it out on my website below:
+
+**[Click Me!](https://yarnss.github.io/stats220/)** 🎅
