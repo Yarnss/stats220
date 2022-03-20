@@ -1,6 +1,6 @@
 # Hi! Welcome to my website 🥳
 
-Here is a meme I created using the [{Magick}](https://cran.r-project.org/web/packages/magick/vignettes/intro.html) package from **R**
+Here is a meme I created using the [{Magick}](https://cran.r-project.org/web/packages/magick/vignettes/intro.html) package from **R**.
 
 ![](meme.png)
 
