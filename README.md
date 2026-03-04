@@ -1,8 +1,8 @@
 # stats220
 
-This is my repo for STATS 220. 
+# This is my repo for STATS 220. 
 
-A little about me:
+## A little about me:
 
 - I am undertaking a degree in Computer Science
 - I am taking STATS 220 because statistics is different, but also has many similiarities, to computer science; meaning I will not only be able to learn new things, but also build on top of previous knowledge
