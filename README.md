@@ -16,4 +16,4 @@ My favourite colours are:
 
 A meme that captures how I currently feel about my university studies is ![](https://miro.medium.com/1*9PYEkmnHDS2ygawLE0e0XQ.gif)
 
-A fun website that I occassionally use is [](https://play.typeracer.com/)
+A fun website that I occassionally use is [TypeRacer](https://play.typeracer.com/)
