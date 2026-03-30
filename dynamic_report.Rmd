@@ -82,7 +82,7 @@ ggplot(data = latest_data) +
   labs(title = "Which YouTube Genre Gets the Highest Views?",
        subtitle = "Comparing genres by the proportion of their videos in view categories",
        x = "Video Genre",
-       y = "Number of Videos")
+       y = "Number of Videos",
+       fill = "Video views")
 
 ```
-
