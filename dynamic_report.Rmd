@@ -65,7 +65,7 @@ The first bar chart compares the average length of videos in each genre. This ch
 # bar chart of mean video lengths in each genre
 ggplot(data = genre_mean_lengths) +
   geom_col(aes(x = video_genre, y = mean_length), fill = "#00bfff") +
-  labs(title = "Which Youtube Genre Gets the Highest Views?",
+  labs(title = "Which Youtube Genre Has the Longest Videos?",
        subtitle = "Comparing genres by the average length of videos in each",
        x = "Video Genre",
        y = "Average Video Length")
@@ -79,7 +79,7 @@ The second bar chart compares genres by the number of videos in each category of
 # bar chart of genre vs view count category
 ggplot(data = latest_data) +
   geom_bar(aes(x = video_genre, fill = video_views)) +
-  labs(title = "Which YouTube Genre Is The Best?",
+  labs(title = "Which YouTube Genre Gets the Highest Views?",
        subtitle = "Comparing genres by the proportion of their videos in view categories",
        x = "Video Genre",
        y = "Number of Videos")
