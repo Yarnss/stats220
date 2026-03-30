@@ -60,7 +60,7 @@ The shortest video in this dataset is `r min_length` minutes long, while the lon
 
 The first bar chart compares the average length of videos in each genre. This chart shows that Podcasts have the highest average video length, being around 200 minutes longer than most other genres.
 
-```{r, fig.height = 5, fig.width = 8, fig.align = "center"}
+```{r, fig.height = 5, fig.width = 8}
 
 # bar chart of mean video lengths in each genre
 ggplot(data = genre_mean_lengths) +
@@ -75,7 +75,7 @@ ggplot(data = genre_mean_lengths) +
 The second bar chart compares genres by the number of videos in each category of views. 
 It can be inferred that Fashion & Beauty is the highest viewed genre, with 3 out of the 4 randomly selected videos having achieved between 1 and 10 million views.
 
-```{r, fig.height = 5, fig.width = 8, fig.align = "center"}
+```{r, fig.height = 5, fig.width = 8}
 
 # bar chart of genre vs view count category
 ggplot(data = latest_data) +
