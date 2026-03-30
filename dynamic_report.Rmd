@@ -1,0 +1,89 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+
+```
+
+```{css}
+h2 {
+  font-weight: bold;
+  padding-left: 200px
+}
+h4 {
+  font-style: italic;
+}
+p {
+  font-weight: lighter
+}
+body {
+  background-color: #808080;
+  color: #FFFFFF
+}
+
+```
+
+## Exploring the connection between genre, length and views of Youtube videos
+
+This report analyses data collected from six different YouTube video genres: Music, Gaming, Sports, Learning, Fashion & Beauty, and Podcasts. The Movies genre was excluded, as the presentation of data differs greatly from the other genres. The data was collected based on random video selection within each genre, done at a different time of day for each genre to ensure fairness, and recording of the length of the video as well the number of views that it had received.
+
+#### Below is an observation made from summary data, followed by two bar charts.
+
+```{r}
+
+library(tidyverse)
+
+# create data frame
+logged_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vT8VMC5JyVaueH4F6-dLnjWbQlaH5OxAObm65CRTTkbxsXgQsr6E3lXDXQe9G-otBYdAYmzYqpLQngK/pub?gid=1566381835&single=true&output=csv")
+
+# create new data frame with renamed variables
+latest_data <- logged_data %>%
+  rename(video_genre = 2,
+         video_length = 3,
+         video_views = 4)
+
+# minimum and maximum video lengths
+min_length <- min(latest_data$video_length)
+max_length <- max(latest_data$video_length)
+
+# group data by genre and find the mean length of videos in each genre
+genre_mean_lengths <- latest_data %>%
+  group_by(video_genre) %>%
+  summarise(mean_length = round(sum(video_length) / length(video_length), 1))
+
+```
+
+The shortest video in this dataset is `r min_length` minutes long, while the longest is `r max_length` minutes long.
+
+The first bar chart compares the average length of videos in each genre. This chart shows that Podcasts have the highest average video length, being around 200 minutes longer than most other genres.
+
+```{r, fig.height = 5, fig.width = 8, fig.align = "center"}
+
+# bar chart of mean video lengths in each genre
+ggplot(data = genre_mean_lengths) +
+  geom_col(aes(x = video_genre, y = mean_length), fill = "#00bfff") +
+  labs(title = "Which Youtube Genre Achieve the Highest Views?",
+       subtitle = "Comparing genres by the proportion of their videos in view categories",
+       x = "Video Genre",
+       y = "Number of Videos")
+
+```
+
+The second bar chart compares genres by the number of videos in each category of views. 
+It can be inferred that Fashion & Beauty is the highest viewed genre, with 3 out of the 4 randomly selected videos having achieved between 1 and 10 million views.
+
+```{r, fig.height = 5, fig.width = 8, fig.align = "center"}
+
+# bar chart of genre vs view count category
+ggplot(data = latest_data) +
+  geom_bar(aes(x = video_genre, fill = video_views)) +
+  labs(title = "Which YouTube Genre Is The Best?",
+       subtitle = "Comparing genres by their videos in view categories",
+       x = "Video Genre",
+       y = "Number of Videos")
+
+```
+
